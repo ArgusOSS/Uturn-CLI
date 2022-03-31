@@ -8,7 +8,7 @@ import json
 import requests
 import pydriller
 
-from validate import validate_IP
+from .validate import validate_IP
 
 config_dir = os.path.dirname(os.path.realpath(__file__))[:-3] + "server/"
 
@@ -152,6 +152,7 @@ def stop():
     """
         Stop the Uturn server.
     """
+
     try:
         with open(config_dir+"pid.txt") as pidfile:
             pid = pidfile.read()
@@ -165,11 +166,10 @@ def stop():
         print("Gunicorn server has been stopped.")
         os.remove(config_dir+"pid.txt")
         return
-    if process_name == "gunicorn":
-        os.kill(int(pid), signal.SIGTERM)
-        print("Stopped the flask server.")
-        os.remove(config_dir+"pid.txt")
-        return
+
+    os.kill(int(pid), signal.SIGTERM)
+    print("Stopped the flask server.")
+    os.remove(config_dir+"pid.txt")
 
 @click.command()
 def logs():
