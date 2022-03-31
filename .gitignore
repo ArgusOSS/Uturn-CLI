@@ -1,3 +1,4 @@
+pid.txt
 gunicorn.log
 config.json
 **/__pycache__
