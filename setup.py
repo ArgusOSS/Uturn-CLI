@@ -11,7 +11,7 @@ setup(
     description="CLI utility for Uturn",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Uturn/uturn-cli",
+    url="https://github.com/UturnOSS/Uturn-CLI",
     packages=find_packages(),
     install_requires=["click", "colorama"],
     setup_requires=[],
