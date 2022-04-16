@@ -13,3 +13,15 @@ CLI utility for Uturn
 [![GitHub forks](https://img.shields.io/github/forks/UturnOSS/Uturn-CLI.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/Naereen/StrapDown.js/network/)
 [![GitHub stars](https://img.shields.io/github/stars/UturnOSS/Uturn-CLI.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/Naereen/StrapDown.js/stargazers/)
 [![PyPI version](https://badge.fury.io/py/uturn-cli.svg)](https://badge.fury.io/py/uturn-cli)
+
+
+## Installation
+
+In your infrastructure, Do the following:
+
+```
+pip3 install uturn-cli
+```
+
+That's it! Now you should be able to setup Uturn on your infrastructure and connect it with Uturn Web.
+
